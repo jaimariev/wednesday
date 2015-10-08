@@ -4,49 +4,82 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 .octodex {
-  list-style: none;
-  
+  	list-style: none;
 }
+
 .octocat {
-  float: left;
-  width: 320px;
-  height: 307px;
-  border: 1px solid #dfdfdf;
-  border-radius: 2px;
-  padding: 5px;
-  margin: 5px;
+  	float: left;
+  	width: 310px;
+  	height: 305px;
+  	border: 1px solid #dfdfdf;
+  	border-radius: 2px;
+  	margin: 5px;
+
 }
 
 .octocat img{
-  width: 300px;
+  	width: 300px;
+  	margin-bottom: 7px;
+  	position: center;
 }
 
+li {
+	display:block;
+	position:relative;
+}
+
+.octocat:after{
+	content:"";
+	position:absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #dfdfdf transparent transparent transparent;
+	float:left;
+	top:303px;
+  	left:293px;
+}
 .authors {
-  list-style: none;
-  float: right;
+  	list-style: none;
+  	float: right;
 }
 
 ul .authors  {
 	padding:0px;
 }
+
+ul .authors li{
+	padding-left: 8px;
+}
 .authors img{
-  width: 15px;
+  	width: 20px;
+  	border: 1px solid #dfdfdf;
+  	border-radius: 2px 2px 2px 2px;
 }
 .image-caption{
 	float:right;
-	font-family: tahoma;
+	font-family: sans-serif;
 	font-size: 10px;
-	color: #dfdfdf;
+	color: gray;
 	margin: auto;
 }
 .image-number{
 	float:left;
-	font-family: tahoma;
-	font-size:10px;
+	font-family: sans-serif;
+	font-size:11px;
 	color: #dfdfdf;
 	font-weight: bold;
+	margin: auto;
 }
+
+.image-footer{
+	padding-bottom: 25px;
+	border-bottom: 1px solid #dfdfdf;
+}
+
 a {
 	color:black;
 	font-weight: bold;
